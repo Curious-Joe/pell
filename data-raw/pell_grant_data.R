@@ -268,7 +268,7 @@ pell <- pell %>%
 pell$STATE = as.factor(pell$STATE)
 pell$NAME = as.factor(pell$NAME)
 pell$SESSION = as.factor(pell$SESSION)
-pell$YEAR = as.numeric(pell$YEAR)
+pell$YEAR = as.integer(pell$YEAR)
 
 write_csv(pell, "data-raw/pell_grant_data.csv")
 usethis::use_data(pell, overwrite = TRUE, internal = FALSE)
