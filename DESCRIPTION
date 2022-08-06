@@ -1,9 +1,10 @@
 Package: pell
-Title: What the Package Does (One Line, Title Case)
+Title: An R package containing data about historic Pell grant distribution in the US
 Version: 0.0.0.9000
 Authors@R: 
     person("Arafath", "Hossain", , "a.h.fahad90@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Historic Pell grant data as provided by the US Department of Education. 
+    This package contains data about how much pell grant was awarded by which institution in which year.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
