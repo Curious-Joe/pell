@@ -18,4 +18,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-License: CC0
+License: MIT + file LICENSE
