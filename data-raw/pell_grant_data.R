@@ -22,7 +22,7 @@ library(httr)
 library(janitor)
 library(patchwork)
 library(glue)
-library(here)
+# library(here)
 
 # 0.0 Variables ----
 raw_data_loc = "data-raw/yearly-data/"
@@ -235,7 +235,7 @@ reportSourcesSummaryCln <- reportSourcesSummaryCln %>%
 # 2.1.1 Attempt 02 ----
 # loading all files
 files <- list.files(raw_data_loc)
-data_combo <- NULL
+pell <- NULL
 # standdardNames <- newNames
 for(file in files){
   file_year = strsplit(file, ".csv")[[1]]
@@ -249,21 +249,26 @@ for(file in files){
   data <- data %>%
     mutate(YEAR = file_year)
 
-  data_combo <- data_combo %>%
+  pell <- pell %>%
     rbind(data)
 }
 
 # creating column for year start and session
-data_combo <- data_combo %>%
+pell <- pell %>%
   rename(SESSION = YEAR) %>%
   separate(SESSION, sep = "-", into = c("YEAR", NA), remove = F)
 
 # formatting data
-data_combo <- data_combo %>%
+pell <- pell %>%
   mutate(
     NAME = tools::toTitleCase(tolower(NAME)),
     STATE = toupper(STATE)
   )
-pell <- data_combo
-write_csv(data_combo, "data-raw/pell_grant_data.csv")
+
+pell$STATE = as.factor(pell$STATE)
+pell$NAME = as.factor(pell$NAME)
+pell$SESSION = as.factor(pell$SESSION)
+pell$YEAR = as.numeric(pell$YEAR)
+
+write_csv(pell, "data-raw/pell_grant_data.csv")
 usethis::use_data(pell, overwrite = TRUE, internal = FALSE)
