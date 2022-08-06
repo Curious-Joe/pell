@@ -4,6 +4,8 @@
 # pell
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/Curious-Joe/pell/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Curious-Joe/pell/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This package contains one dataset that contains total [Pell
