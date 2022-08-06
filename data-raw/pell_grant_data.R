@@ -22,10 +22,10 @@ library(httr)
 library(janitor)
 library(patchwork)
 library(glue)
-# library(here)
+library(here)
 
 # 0.0 Variables ----
-raw_data_loc = "inst/extdata/"
+raw_data_loc = "data-raw/yearly-data/"
 url <- "https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html"
 downloadString <- "https://www2.ed.gov/finaid/prof/resources/data/"
 
@@ -91,7 +91,7 @@ downloadData <- function(reportSourcesDF, storageLocation){
   return(df)
 }
 
-reportSourcesSummary <- downloadData(reportSources, here::here(raw_data_loc))
+reportSourcesSummary <- downloadData(reportSources, raw_data_loc) #here::here(raw_data_loc)
 
 # # 1.3 Data Explore ----
 #
@@ -177,11 +177,6 @@ reportSourcesSummary <- reportSourcesSummary %>%
 
 # 2.0 DATA PREPARATION ----
 # 2.1 Matching old names to standardised names ----
-reportSourcesSummaryCln %>%
-  mutate(value = toupper(value)) %>%
-  select(value, newName) %>%
-  table()
-
 standardNames <- c(
   "NAME",
   "STATE",
@@ -216,6 +211,11 @@ matchNewName <- function(oldNamesTbl, oldNameCol, standardNames){
 }
 reportSourcesSummaryCln <- matchNewName(reportSourcesSummary, value, standardNames)
 
+# reportSourcesSummaryCln %>%
+#   mutate(value = toupper(value)) %>%
+#   select(value, newName) %>%
+#   table()
+
 # table(reportSourcesSummaryCln$newName)
 # Institution and Receips are two unstandardised values yet in the dataset
 reportSourcesSummaryCln <- reportSourcesSummaryCln %>%
@@ -236,7 +236,7 @@ reportSourcesSummaryCln <- reportSourcesSummaryCln %>%
 # loading all files
 files <- list.files(raw_data_loc)
 data_combo <- NULL
-standdardNames <- newNames
+# standdardNames <- newNames
 for(file in files){
   file_year = strsplit(file, ".csv")[[1]]
   data <- read_csv(glue::glue("{raw_data_loc}{file}"))
@@ -264,6 +264,6 @@ data_combo <- data_combo %>%
     NAME = tools::toTitleCase(tolower(NAME)),
     STATE = toupper(STATE)
   )
-
-write_csv(data_combo, here::here(raw_data_loc))
-usethis::use_data(pell_grant_data, overwrite = TRUE, internal = TRUE)
+pell <- data_combo
+write_csv(data_combo, "data-raw/pell_grant_data.csv")
+usethis::use_data(pell, overwrite = TRUE, internal = FALSE)
