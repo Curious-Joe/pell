@@ -1,0 +1,58 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.2.2
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "pell" in publications use:'
+type: software
+license: MIT
+title: 'pell: An R package containing data about historic Pell grant distribution
+  in the US'
+version: 0.0.0.9000
+abstract: Historic Pell grant data as provided by the US Department of Education.
+  This package contains data about how much pell grant was awarded by which institution
+  in which year.
+authors:
+- family-names: Hossain
+  given-names: Arafath
+  email: a.h.fahad90@gmail.com
+preferred-citation:
+  type: manual
+  title: 'pell: An R package containing data about historic Pell grant distribution
+    in the US'
+  authors:
+  - family-names: Hossain
+    given-names: Arafath
+    email: a.h.fahad90@gmail.com
+  version: 0.0.0.9000
+  abstract: Historic Pell grant data as provided by the US Department of Education.
+    This package contains data about how much pell grant was awarded by which institution
+    in which year.
+  repository-code: https://github.com/Curious-Joe/pell
+  url: https://github.com/Curious-Joe/pell
+  contact:
+  - family-names: Hossain
+    given-names: Arafath
+    email: a.h.fahad90@gmail.com
+  license: MIT
+  year: '2022'
+repository-code: https://github.com/Curious-Joe/pell
+url: https://github.com/Curious-Joe/pell
+contact:
+- family-names: Hossain
+  given-names: Arafath
+  email: a.h.fahad90@gmail.com
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2022'
+  url: https://www.R-project.org/
+  institution:
+    name: R Foundation for Statistical Computing
+  version: '>= 2.10'
