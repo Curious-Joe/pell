@@ -1,10 +1,10 @@
 ^pell\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
-^LICENSE\.md$
 ^CITATION\.cff$
 ^README\.Rmd$
 ^\.github$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^LICENSE\.md$

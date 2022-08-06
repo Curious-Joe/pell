@@ -4,8 +4,8 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Arafath", "Hossain", , "a.h.fahad90@gmail.com", role = c("aut", "cre"))
 Description: Historic Pell grant data as provided by the US Department of Education. 
-    This package contains data about how much pell grant was awarded by which institution in which year.
-License: CC0
+    This package contains data about how much pell grant was awarded by which institution in 
+    which year.
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
@@ -18,3 +18,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+License: CC0
