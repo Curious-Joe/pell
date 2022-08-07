@@ -6,7 +6,7 @@ template:
 navbar:
   type: light
   structure:
-    left:  [home, intro, reference, articles]
+    left:  [home, intro, reference, articles, changelog]
     right: [github]
   components:
     intro:
@@ -22,4 +22,7 @@ navbar:
       - text: Extras
       - text: Download the data directly
         href: articles/download.html
+    changelog:
+      text: Changelog
+      href: news/index.html
 
