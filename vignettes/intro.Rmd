@@ -55,7 +55,7 @@ dplyr::glimpse(pell)
 
 The `pell::pell` data contains `r sum(complete.cases(pell))` complete cases, with `r sum(is.na(pell))` missing values.
 
-```{r eval=FALSE, message=FALSE}
+```{r eval=TRUE, message=FALSE}
 visdat::vis_dat(pell)
 ```
 
@@ -100,11 +100,11 @@ treemap::treemap(pell,
 
 ### More
 
-If you are a Python user, you may find interest in checking a [dash app]() that I created earlier using the same data. Check out the app repository [here](https://github.com/Curious-Joe/Pell-Awardees-in-US-Colleges). Here's a preview of the app:
+If you are a Python user, you may find interest in checking a [dash app]() that I created earlier using the same data. Check out the app repository [here](https://github.com/Curious-Joe/Pell-Awardees-in-US-Colleges). 
 
-<p align="center">
-  <img src="figs/dash_app_pell.gif" alt="animated" />
-</p>
+<!-- <p align="center"> -->
+<!--   <img src="figs/dash_app_pell.gif" alt="animated" /> -->
+<!-- </p> -->
 
 I will try to put some more R examples in `vignette("examples")` but currently it's not populated.
 
