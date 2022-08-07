@@ -1,6 +1,6 @@
 Package: pell
 Title: An R package containing data about historic Pell grant distribution in the US
-Version: 0.0.0.9000
+Version: 0.1.0.0
 Authors@R: 
     person("Arafath", "Hossain", , "a.h.fahad90@gmail.com", role = c("aut", "cre"))
 Description: Historic Pell grant data as provided by the US Department of Education. 
