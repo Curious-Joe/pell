@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   pell: pell.html
-last_built: 2022-08-07T02:22Z
+last_built: 2022-08-07T03:46Z
 urls:
   reference: https://curious-joe.github.io/pell/reference
   article: https://curious-joe.github.io/pell/articles
