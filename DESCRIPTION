@@ -19,6 +19,7 @@ Suggests:
     dplyr,
     knitr,
     rmarkdown,
-    treemap
+    treemap,
+    visdat
 VignetteBuilder: knitr
 License: CC0
