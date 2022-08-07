@@ -3,4 +3,25 @@ url: https://curious-joe.github.io/pell/
 template:
   bootstrap: 5
 
+navbar:
+  type: light
+  structure:
+    left:  [home, intro, reference, articles]
+    right: [github]
+  components:
+    intro:
+      text: "Get started"
+      href: articles/intro.html
+    articles:
+      text: Articles
+      menu:
+      # - text: "Use pell"
+      # - text: Examples using ggplot2
+      #   href: articles/examples.html
+      - text: -------
+      - text: Extras
+      # - text: Art
+      #   href: articles/art.html
+      - text: Download the data directly
+        href: articles/download.html
 
