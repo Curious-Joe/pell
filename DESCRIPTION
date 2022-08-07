@@ -9,7 +9,8 @@ Description: Historic Pell grant data as provided by the US Department of Educat
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-URL: https://github.com/Curious-Joe/pell
+URL: https://github.com/Curious-Joe/pell,
+    https://curious-joe.github.io/pell/
 BugReports: https://github.com/Curious-Joe/pell/issues
 Depends: 
     R (>= 2.10)
