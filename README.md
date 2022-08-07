@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# pell
+# pell <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
 
@@ -21,12 +21,6 @@ You can install the released version of `pell` from
 ``` r
 # Install the released version from CRAN
 install.packages("devtools")
-#> Installing package into 'C:/Users/ahfah/AppData/Local/Temp/RtmpcTG2Be/temp_libpath34a87fce860'
-#> (as 'lib' is unspecified)
-#> package 'devtools' successfully unpacked and MD5 sums checked
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\downloaded_packages
 ```
 
 You can install the development version of `pell` from
@@ -34,24 +28,7 @@ You can install the development version of `pell` from
 
 ``` r
 install.packages("devtools")
-#> Installing package into 'C:/Users/ahfah/AppData/Local/Temp/RtmpcTG2Be/temp_libpath34a87fce860'
-#> (as 'lib' is unspecified)
-#> package 'devtools' successfully unpacked and MD5 sums checked
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\downloaded_packages
 devtools::install_github("Curious-Joe/pell")
-#> Downloading GitHub repo Curious-Joe/pell@HEAD
-#>          checking for file 'C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\remotes34406e684a06\Curious-Joe-pell-5c12511/DESCRIPTION' ...  ✔  checking for file 'C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\remotes34406e684a06\Curious-Joe-pell-5c12511/DESCRIPTION'
-#>       ─  preparing 'pell':
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>       ─  building 'pell_0.0.0.9000.tar.gz'
-#>      
-#> 
-#> Installing package into 'C:/Users/ahfah/AppData/Local/Temp/RtmpcTG2Be/temp_libpath34a87fce860'
-#> (as 'lib' is unspecified)
 ```
 
 ## About the data
