@@ -1,5 +1,10 @@
 ---
 title: "Introduction to pell"
+vignette: >
+  %\VignetteIndexEntry{intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 ---
 
 ```{r, include = FALSE}
@@ -16,8 +21,7 @@ knitr::opts_chunk$set(
 ```{r setup, include=FALSE}
 library(pell)
 library(dplyr)
-library(ggplot2)
-theme_set(theme_minimal())
+library(treemap)
 ```
 
 The `pell` R package contains two datasets that we believe are a viable alternative to Anderson's **Iris** data (see `datasets::iris`). In this introductory vignette, we'll highlight some of the properties of these datasets that make them useful for statistics and data science education, as well as software documentation and testing.
@@ -46,12 +50,12 @@ devtools::install_github("Curious-Joe/pell")
 This package contains one dataset called - pell. Take a glimpse at the data:
 
 ```{r}
-glimpse(pell)
+dplyr::glimpse(pell)
 ```
 
 The `pell::pell` data contains `r sum(complete.cases(pell))` complete cases, with `r sum(is.na(pell))` missing values.
 
-```{r eval=FALSE}
+```{r eval=FALSE, message=FALSE}
 visdat::vis_dat(pell)
 ```
 
@@ -66,7 +70,7 @@ The `pell` data has three factor variables:
 ```{r}
 pell %>%
   dplyr::select(where(is.factor)) %>% 
-  glimpse()
+  dplyr::glimpse()
 ```
 
 Get the top 10 states with the highest median Pell grant record:
@@ -74,11 +78,11 @@ Get the top 10 states with the highest median Pell grant record:
 ```{r}
 # Top 10 institutions with the highest pell grant disbursements
 pell %>%
-  group_by(STATE) %>%
-  summarise(
+  dplyr::group_by(STATE) %>%
+  dplyr::summarise(
     Median = median(.data$AWARD, na.rm = TRUE)
   ) %>%
-  arrange(desc(Median)) %>%
+  dplyr::arrange(desc(Median)) %>%
   head(10) %>%
   knitr::kable(caption = "Top 10 States with the Highest Median Grant Distribution")
 ```
@@ -86,8 +90,7 @@ pell %>%
 Get a treemap of all the states based on their total paid out grant dollars:
 
 ```{r message=FALSE}
-library(treemap)
-treemap(pell,
+treemap::treemap(pell,
             index=c("STATE"),
             vSize="AWARD",
             type="index",
@@ -120,4 +123,4 @@ Have fun with the pell grant data!
 
 ***
 
-Thanks to the [`palmerpenguins`](https://github.com/allisonhorst/palmerpenguins) package for their great vignette. I used the vignette from that package as a skeleton and populated this vignette with relevant contents. A big shout out to them and a hearfelt thank you 🙏
+Thanks to the [`palmerpenguins`](https://github.com/allisonhorst/palmerpenguins) package for their great vignette. I used the vignette from that package as a skeleton and populated this vignette with relevant contents. A big shout out to them and a heartfelt thank you 🙏

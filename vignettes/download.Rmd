@@ -1,5 +1,10 @@
 ---
 title: "Download pell data from US Department of Education"
+vignette: >
+  %\VignetteIndexEntry{download}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 ---
 
 ```{r, include = FALSE}
@@ -7,10 +12,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-```
-
-```{r setup, warning=FALSE, message=FALSE}
-library(palmerpenguins)
 ```
 
 ## Download data from a US Department of Education website

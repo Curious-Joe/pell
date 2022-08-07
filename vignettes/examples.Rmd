@@ -1,5 +1,10 @@
 ---
 title: "Example data visualizations using pell data"
+vignette: >
+  %\VignetteIndexEntry{examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 ---
 
 ```{r, include = FALSE}

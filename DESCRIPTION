@@ -16,7 +16,9 @@ Depends:
     R (>= 2.10)
 LazyData: true
 Suggests: 
+    dplyr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    treemap
 VignetteBuilder: knitr
 License: CC0
