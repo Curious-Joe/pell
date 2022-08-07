@@ -15,13 +15,11 @@ navbar:
     articles:
       text: Articles
       menu:
-      # - text: "Use pell"
-      # - text: Examples using ggplot2
-      #   href: articles/examples.html
+      - text: "Use pell"
+      - text: Examples using ggplot2
+        href: articles/examples.html
       - text: -------
       - text: Extras
-      # - text: Art
-      #   href: articles/art.html
       - text: Download the data directly
         href: articles/download.html
 
