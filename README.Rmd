@@ -25,13 +25,13 @@ This package contains one dataset that contains total [Pell grant](https://www2.
 
 You can install the released version of `pell` from [CRAN](https://cran.r-project.org/) with:
 
-``` r
+```{r}
 # Install the released version from CRAN
 install.packages("devtools")
 ```
 You can install the development version of `pell` from [GitHub](https://github.com/) with:
 
-``` r
+```{r}
 install.packages("devtools")
 devtools::install_github("Curious-Joe/pell")
 ```
@@ -48,18 +48,19 @@ In this package, the raw data files were sourced from their website, cleaned, st
 
 Load the dataset:
 
-``` r
+```{r}
 library(pell)
 data(pell)
 ```
 
 Explore first 5 rows:
 
-```r
+```{r}
 head(pell)
 ```
 
 ## References
 
 Data originally published in:
-* US Department of Education Website:  https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html
+
+* US Department of Education Website: https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html

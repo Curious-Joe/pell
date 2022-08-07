@@ -21,6 +21,12 @@ You can install the released version of `pell` from
 ``` r
 # Install the released version from CRAN
 install.packages("devtools")
+#> Installing package into 'C:/Users/ahfah/AppData/Local/Temp/RtmpcTG2Be/temp_libpath34a87fce860'
+#> (as 'lib' is unspecified)
+#> package 'devtools' successfully unpacked and MD5 sums checked
+#> 
+#> The downloaded binary packages are in
+#>  C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\downloaded_packages
 ```
 
 You can install the development version of `pell` from
@@ -28,7 +34,24 @@ You can install the development version of `pell` from
 
 ``` r
 install.packages("devtools")
+#> Installing package into 'C:/Users/ahfah/AppData/Local/Temp/RtmpcTG2Be/temp_libpath34a87fce860'
+#> (as 'lib' is unspecified)
+#> package 'devtools' successfully unpacked and MD5 sums checked
+#> 
+#> The downloaded binary packages are in
+#>  C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\downloaded_packages
 devtools::install_github("Curious-Joe/pell")
+#> Downloading GitHub repo Curious-Joe/pell@HEAD
+#>          checking for file 'C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\remotes34406e684a06\Curious-Joe-pell-5c12511/DESCRIPTION' ...  ✔  checking for file 'C:\Users\ahfah\AppData\Local\Temp\RtmpoBiL5T\remotes34406e684a06\Curious-Joe-pell-5c12511/DESCRIPTION'
+#>       ─  preparing 'pell':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
+#>       ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>       ─  building 'pell_0.0.0.9000.tar.gz'
+#>      
+#> 
+#> Installing package into 'C:/Users/ahfah/AppData/Local/Temp/RtmpcTG2Be/temp_libpath34a87fce860'
+#> (as 'lib' is unspecified)
 ```
 
 ## About the data
@@ -56,9 +79,18 @@ Explore first 5 rows:
 
 ``` r
 head(pell)
+#>   STATE     AWARD RECIPIENT                               NAME SESSION YEAR
+#> 1    AK  197232.9       109          Alaska Pacific University 1999-00 1999
+#> 2    AK  133148.0        69 Alaska Vocational Technical Center 1999-00 1999
+#> 3    AK  107287.0        72            Sheldon Jackson College 1999-00 1999
+#> 4    AK 3425148.8      1920   University of Alaska - Anchorage 1999-00 1999
+#> 5    AK 2441864.0      1256  University of Alaska at Fairbanks 1999-00 1999
+#> 6    AK  353170.0       221  University of Alaska at Southeast 1999-00 1999
 ```
 
 ## References
 
-Data originally published in: \* US Department of Education Website:
-<https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html>
+Data originally published in:
+
+-   US Department of Education Website:
+    <https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html>
