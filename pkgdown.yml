@@ -1,12 +1,12 @@
-pandoc: 2.14.2
-pkgdown: 2.0.6
+pandoc: 2.19.2
+pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   download: download.html
   examples: examples.html
   intro: intro.html
   pell: pell.html
-last_built: 2022-08-13T13:37Z
+last_built: 2023-06-03T04:15Z
 urls:
   reference: https://curious-joe.github.io/pell/reference
   article: https://curious-joe.github.io/pell/articles
