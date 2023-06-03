@@ -27,7 +27,7 @@ You can install the released version of `pell` from [CRAN](https://cran.r-projec
 
 ```r
 # Install the released version from CRAN
-install.packages("devtools")
+install.packages("pell")
 ```
 You can install the development version of `pell` from [GitHub](https://github.com/) with:
 

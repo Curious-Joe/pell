@@ -20,7 +20,7 @@ You can install the released version of `pell` from
 
 ``` r
 # Install the released version from CRAN
-install.packages("devtools")
+install.packages("pell")
 ```
 
 You can install the development version of `pell` from
@@ -40,8 +40,8 @@ extensive data cleaning to make them useful as a whole.
 In this package, the raw data files were sourced from their website,
 cleaned, standardized, and joined together into one dataset:
 
--   `pell`: For each year since 1999 to 2017 how much total money was
-    disbursed as Pell grant by each institution across the USA.
+- `pell`: For each year since 1999 to 2017 how much total money was
+  disbursed as Pell grant by each institution across the USA.
 
 ## Example
 
@@ -69,5 +69,5 @@ head(pell)
 
 Data originally published in:
 
--   US Department of Education Website:
-    <https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html>
+- US Department of Education Website:
+  <https://www2.ed.gov/finaid/prof/resources/data/pell-institution.html>
